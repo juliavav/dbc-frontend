@@ -1,0 +1,15 @@
+<div class="header__container">
+  <div class="header__inner">
+    <img src="../../assets/dog.jpg">
+    <div class="navigation">
+      <a routerLink="/dogs">Мои питомцы</a>
+      <!--      <a routerLink="/game">Игра</a>-->
+      <a routerLink="/sale">Продажа</a>
+      <a routerLink="info/shelters">Информация</a>
+    </div>
+    <div class="user">
+      <p>Привет, {{currentUser.username}}</p>
+      <a (click)="logout()">Выход</a>
+    </div>
+  </div>
+</div>

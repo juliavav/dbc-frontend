@@ -1,0 +1,64 @@
+.registration {
+  margin: auto;
+  width: 27%;
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 6rem;
+}
+.registration--inner {
+  padding-top: 3%;
+  margin: 16%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.registration h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 6%;
+}
+.registration button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1vh;
+  border: #f9a824 solid 1.5pt;
+  margin-top: 5%;
+}
+.registration form {
+  display: flex;
+  flex-flow: column;
+}
+.registration a {
+  text-decoration: underline solid;
+  color: #D1D2D6;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.btn {
+  border: #707070 solid !important;
+  color: #707070;
+}
+input {
+  font-size: 1rem;
+}
+mat-label {
+  font-size: 1rem;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*# sourceMappingURL=registration.component.css.map */

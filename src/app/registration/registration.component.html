@@ -1,0 +1,38 @@
+<div class="registration__container">
+  <mat-card class="mat-elevation-z5 registration">
+    <div class="registration--inner">
+      <h2>регистрация</h2>
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Имя</mat-label>
+          <input formControlName="firstName" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Логин</mat-label>
+          <input formControlName="username" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <span matPrefix>+7 &nbsp;</span>
+          <mat-label>Телефон</mat-label>
+          <input formControlName="phone" type="tel" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Почта</mat-label>
+          <input formControlName="email" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Пароль</mat-label>
+          <input formControlName="password" type="password" matInput>
+        </mat-form-field>
+        <button mat-stroked-button color="accent">
+          Зарегестрироваться
+        </button>
+      </form>
+      <button mat-stroked-button class="btn" (click)="onBack()">
+        Вернуться
+      </button>
+      <br>
+    </div>
+  </mat-card>
+</div>
+

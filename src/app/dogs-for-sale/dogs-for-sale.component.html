@@ -1,0 +1,9 @@
+<div class="inner">
+  <!--  <h2> Мои питомцы</h2>-->
+  <div *ngIf="dogs" class="dogs">
+    <div *ngFor="let dog of dogs">
+      <app-dogs-for-sale-card [dog]="dog"></app-dogs-for-sale-card>
+    </div>
+  </div>
+</div>
+

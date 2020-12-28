@@ -1,0 +1,78 @@
+<div class="inner">
+  <!--  <h2> Мои питомцы</h2>-->
+  <div *ngIf="dogs" class="dogs">
+    <div *ngFor="let dog of dogs">
+      <app-dog-card [dog]="dog"></app-dog-card>
+    </div>
+    <mat-card *ngIf="editMode">
+      <form [formGroup]="dogForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+          <mat-label>Имя</mat-label>
+          <input formControlName="name" matInput>
+        </mat-form-field>
+        <mat-radio-group formControlName="sex">
+          <mat-label>Пол</mat-label>
+          <mat-radio-button value="0">Мальчик</mat-radio-button>
+          <mat-radio-button value="1">Девочка</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field>
+          <input matInput formControlName="years" type="number" placeholder="Годы">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="months" type="number" placeholder="Месяцы">
+        </mat-form-field>
+        <input
+          (change)="onChange($event)"
+          formControlName="file"
+          name="file"
+          id="file"
+          type="file"
+          class="form-control inputfile">
+        <label for="file">Выбрать файл...</label>
+        <button mat-stroked-button>
+          Добавить
+        </button>
+      </form>
+    </mat-card>
+    <mat-card *ngIf="!editMode" class="button-container mat-elevation-z0">
+      <button mat-fab color="accent" id="addBtn" (click)="editMode=true;">+
+      </button>
+    </mat-card>
+  </div>
+  <mat-card *ngIf="editMode&&(!dogs)">
+    <form [formGroup]="dogForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Имя</mat-label>
+        <input formControlName="name" matInput>
+      </mat-form-field>
+      <mat-radio-group formControlName="sex">
+        <mat-label>Пол</mat-label>
+        <mat-radio-button value="0">Мальчик</mat-radio-button>
+        <mat-radio-button value="1">Девочка</mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field>
+        <input matInput formControlName="years" type="number" placeholder="Годы">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="months" type="number" placeholder="Месяцы">
+      </mat-form-field>
+      <input
+        (change)="onChange($event)"
+        formControlName="file"
+        name="file"
+        id="file"
+        type="file"
+        class="form-control inputfile">
+      <label for="file">Выбрать файл...</label>
+      <button mat-stroked-button>
+        Добавить
+      </button>
+    </form>
+  </mat-card>
+  <mat-card *ngIf="!editMode&&!dogs" class="button-container mat-elevation-z0">
+    <button mat-fab color="accent" id="addBtn" (click)="editMode=true;">+
+    </button>
+  </mat-card>
+
+</div>
+

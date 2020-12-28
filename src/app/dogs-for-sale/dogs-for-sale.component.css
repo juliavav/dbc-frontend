@@ -1,0 +1,36 @@
+.inner {
+  padding: 2% 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inner h2 {
+  margin: auto;
+  text-align: center;
+}
+.dogs {
+  display: flex;
+}
+mat-card {
+  width: 17vw;
+  height: 44vh;
+  margin: 2rem;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*# sourceMappingURL=dogs-for-sale.component.css.map */

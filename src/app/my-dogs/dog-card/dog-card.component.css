@@ -1,0 +1,51 @@
+mat-card {
+  width: 17vw;
+  height: 44vh;
+  margin: 2rem;
+  text-align: center;
+}
+p {
+  text-align: start;
+  margin-bottom: 0.2vh;
+}
+p.italic {
+  font-style: italic;
+  color: #707070;
+  font-size: 0.9rem;
+}
+img {
+  max-height: 22vh;
+  max-width: 15vw;
+  margin: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.img-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+mat-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*# sourceMappingURL=dog-card.component.css.map */

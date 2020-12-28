@@ -1,0 +1,12 @@
+<mat-card>
+  <div class="img-container">
+    <img src="{{dog.photoUrl}}"><br>
+  </div>
+  <div>
+    <p>Имя: {{dog.name}}</p>
+    <p>Возраст: {{getAgeString()}}</p>
+    <p>Пол: {{dog.sex === 1 ? 'Девочка' : 'Мальчик'}}</p>
+    <p>Цена: {{dog.price}}</p>
+    <p class="italic">{{dog.ownerName}}, +7{{dog.ownerPhone}}</p>
+  </div>
+</mat-card>

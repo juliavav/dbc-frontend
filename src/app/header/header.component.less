@@ -1,0 +1,78 @@
+.header__container {
+  background: @White;
+  border-bottom: 0.1rem @Light-Grey solid;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  //position: fixed;
+}
+
+.header__inner {
+  display: flex;
+  padding: 1vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+img {
+  height: 6vh;
+}
+
+.navigation {
+  justify-content: center;
+}
+
+.navigation a {
+  color: @Black;
+  border-radius: 50%;
+  padding: 0 2vw;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation a:after {
+  background-color: @Orange;
+  display: block;
+  content: "";
+  height: 0.3vh;
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.navigation a:hover:after,
+.navigation a:focus:after {
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 0.4vh;
+  margin-left: 30%;
+}
+
+.user p, a {
+  color: @Black;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  border-radius: 50%;
+  padding: 0 2vw;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+.user a {
+  color: @Orange;
+}
+
+
+@import "../../styles";

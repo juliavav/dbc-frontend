@@ -1,0 +1,17 @@
+<div class="info__container">
+  <mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle value="table" aria-label="Text align left" checked="true">
+      <mat-icon>table_chart</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="map" aria-label="Text align center">
+      <mat-icon>map</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+  <div *ngIf="group.value == 'table'" class="table__container">
+    <app-table *ngIf="this.geoJson" [columns]="this.columns" [data]="getData()"
+               [columnsNames]="columnsNames"></app-table>
+  </div>
+  <div *ngIf="group.value == 'map'" class="map__container">
+    <app-map *ngIf="this.geoJson" [json]=geoJson [urlImg]="'vet.svg'"></app-map>
+  </div>
+</div>

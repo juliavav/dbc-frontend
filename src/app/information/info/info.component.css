@@ -1,0 +1,39 @@
+.info__container {
+  background: #f9a824;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.info__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+.input__container {
+  margin: 2vh 10vw;
+}
+.navigation a {
+  color: #FFFFFF;
+  padding: 2vh 2vw;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*# sourceMappingURL=info.component.css.map */

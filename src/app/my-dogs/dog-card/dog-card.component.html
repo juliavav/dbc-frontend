@@ -1,0 +1,19 @@
+<mat-card>
+  <div class="img-container">
+    <div class="button-container">
+      <button mat-icon-button color="warn" (click)="openSellDialog()">
+        <mat-icon>store</mat-icon>
+      </button>
+      <button mat-icon-button (click)="openDeleteDialog()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+    <img src="{{dog.photoUrl}}"><br>
+  </div>
+  <div>
+    <p>Имя: {{dog.name}}</p>
+    <p>Возраст: {{getAgeString()}}</p>
+    <p>Пол: {{dog.sex === 1 ? 'Девочка' : 'Мальчик'}}</p>
+    <p class="italic" *ngIf="dog.isForSale">На продаже</p>
+  </div>
+</mat-card>

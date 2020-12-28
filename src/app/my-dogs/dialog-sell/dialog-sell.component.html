@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Выставить питомца на продажу</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Введите цену</mat-label>
+    <input matInput [(ngModel)]="sellData.cost">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="noClick()">Отмена</button>
+  <button mat-button (click)="yesClick()" cdkFocusInitial>Ok</button>
+</div>

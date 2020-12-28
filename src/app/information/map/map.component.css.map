@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [
+    "map.component.less"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE,WAAA;EACA,YAAA",
+  "file": "map.component.css"
+}
